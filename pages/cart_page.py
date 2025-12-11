@@ -14,11 +14,8 @@ class CartPage:
         self.wait = WebDriverWait(driver,10)
 
     def obtener_productos_carrito(self):
-<<<<<<< HEAD
         productos = self.wait.until(EC.visibility_of_all_elements_located(self._CART_ITEMS))
-=======
         productos = self.wait.until(EC.visibility_of_all_elements_located(*self._CART_ITEMS))
->>>>>>> 9922f3a0349ebcd68970d905daf976cabf3eedec
         return productos
     
     def obtener_nombre_producto_carrito(self):
